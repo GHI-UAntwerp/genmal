@@ -155,13 +155,13 @@ html {
     padding: 0rem 0rem 0rem 0rem;
     display: grid;
     justify-content: center;
+    white-space: normal;
 } 
 
 body {
     min-height: 100vh;
-    height: 2340px;
-    max-width: 1080px;
-    max-height: 2340px ;
+    height: 677px;
+    max-width: 375px;
     padding: 1rem 1rem 1rem 1rem;
 }
 
