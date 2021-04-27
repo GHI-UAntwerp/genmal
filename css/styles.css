@@ -342,7 +342,6 @@ a {
 .des
 .pic {
     background-color: var(--color-light-bg);
-    text-align: center;
 }
 
 /* An container for pictures */
@@ -403,7 +402,6 @@ a {
 .stay-connected{
     font-family: var(--font-text);
     font-size: 4em;
-    padding: 0em 0em 0.5em 0em;
     display: flex;
 }
 
@@ -415,3 +413,13 @@ a {
     line-break: normal;
 }
 
+.stay-social{
+    padding: 2em 0em 0em 0em;
+    text-align: center;
+}
+
+.stay-center{
+    text-align: center;
+    font-style: italic;
+    margin-top: 0em;
+}
