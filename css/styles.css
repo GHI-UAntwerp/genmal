@@ -158,9 +158,10 @@ html {
 } 
 
 body {
+    min-height: 100vh;
+    height: 2340px;
     max-width: 1080px;
     max-height: 2340px ;
-    min-height: 100vh;
     padding: 1rem 1rem 1rem 1rem;
 }
 
