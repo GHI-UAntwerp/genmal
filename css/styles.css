@@ -161,7 +161,6 @@ body {
     min-height: 100vh;
     max-width: 991px;
     padding: 1rem 1rem 1rem 1rem;
-    flex-direction: row;
 }
 
 /* || General styles */
