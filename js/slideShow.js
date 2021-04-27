@@ -5,5 +5,5 @@ if (window.matchMedia) {
     checkViewPort(mq);
     }
 function checkViewPort(mq) {
-    mq.matches ? viewport.setAttribute('content', 'width=960') : viewport.setAttribute('content', 'width=device-width');
+    mq.matches ? viewport.setAttribute('content', 'width=320') : viewport.setAttribute('content', 'width=device-width');
     }
