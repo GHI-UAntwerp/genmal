@@ -156,6 +156,7 @@ html {
     display: grid;
     justify-content: center;
     white-space: normal;
+    -webkit-text-size-adjust: none; /* Never autoresize text */
 } 
 
 body {
@@ -265,7 +266,6 @@ body {
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-  orientation:portrait;
 }
 
 @media only screen and (min-width: 600px) and {
