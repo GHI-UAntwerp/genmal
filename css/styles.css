@@ -265,9 +265,10 @@ body {
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+  orientation:portrait;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and {
   /* For tablets: */
     .col-s-1 {width: 16.66%;}
     .col-s-2 {width: 33.32;}
