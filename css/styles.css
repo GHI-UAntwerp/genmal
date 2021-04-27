@@ -226,15 +226,6 @@ body {
     padding: 1em 1em 1em 1em;
     }
 
-/* A simple padding */
-.pad-1em {
-    padding: 1em 1em 1em 1em; 
-}
-
-.pad-1rem {
-    padding: 1rem 1rem 1rem 1rem; 
-}
-
 /* || Responsive layout*/
 
 /* A general reset */
@@ -306,10 +297,12 @@ body {
 .links-container {
     list-style-type: none;
     background-color: var(--color-light-bg);
+    overflow: inline-block;
 }
 
 ul{
     list-style-type: none;
+    width: 100%;
     display: flex;
 }
 
@@ -421,3 +414,4 @@ a {
     width: 100%;
     line-break: normal;
 }
+
