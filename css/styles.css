@@ -291,6 +291,10 @@ body {
 .logo-container {
     background-color: var(--color-light-bg);
     width: 100%;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -o-transition: background-color 2s;
+    transition: background-color 2s;
 }
 
 .links-container {
@@ -328,12 +332,37 @@ a {
     opacity: 0.6;
 }
 
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 /* || General */
@@ -353,6 +382,7 @@ a {
     width: 100%;
     max-width: 1280px;
     display: inline;
+    transition: 2s;
 }
 
 /* An image caption */
@@ -392,6 +422,7 @@ a {
     padding: 0.2em 0.2em 0.2em 0.2em;
     display: inline;
     line-height: 0.5em;
+    text-align: center;
 }
 
 .logos-captxt{
@@ -400,6 +431,7 @@ a {
     padding: 0em 0em 1em 1em;
     margin-bottom: 0.2em;
     font-weight: 300;
+    text-align: center;
 }
 
 .stay-connected{
@@ -419,6 +451,7 @@ a {
     padding: 1em 1em 1em 1em;
     width: 100%;
     line-break: normal;
+    text-align: center;
 }
 
 .stay-social{
