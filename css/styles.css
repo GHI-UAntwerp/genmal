@@ -73,6 +73,7 @@
     --color-base-light: hsla(270, 2%, 35%, 1);
     --color-base-dark: hsla(270, 2%, 15%, 1);
     --color-base-darker: hsla(270, 2%, 05%, 1);
+    --color-base-x-darker: hsla(270, 2%, 0%, 1);
 
     /* shades 
      * generated using 
@@ -266,7 +267,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) and {
+@media only screen and (min-width: 600px) {
   /* For tablets: */
     .col-s-1 {width: 16.66%;}
     .col-s-2 {width: 33.32;}
@@ -305,6 +306,10 @@ ul{
     display: flex;
 }
 
+ul:hover{
+    background-color: var(--color-prin);
+}
+
 li{
     list-style-type: none;
     width: 100%;
@@ -319,8 +324,18 @@ a {
     padding: 0.4em 1em;
     position: relative;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0
 }
+
+a:hover{
+    background-color: white;
+    color: var(--color-prin-darker);
+    text-decoration: auto;
+    font-weight: 200;
+}
+
 
 /* Dark background for white text */
 .txt-drk-bg {
@@ -397,8 +412,15 @@ a {
     display: inline;
 }
 
+.caption:hover{
+    background-color: var(--color-base-x-darker);
+    background: 
+        radial-gradient(circle,
+                        var(--color-prin-x-darker) 0%,var(--color-prin-x-darker) 100%);
+}
+
 .captxt{
-    color: var(--color-gray-0);
+    color: white;
     padding: 0em 01em 0em 1em;
 }
 
@@ -421,9 +443,18 @@ a {
     text-align: center;
 }
 
+.logos-caption:hover{
+    background: 
+        linear-gradient(
+            var(--color-prin-darker),
+            var(--color-prin),
+            var(--color-prin-darker)
+            );
+}
+
 .logos-captxt{
     font-family: var(--font-text);
-    color: var(--color-gray-0);
+    color: white;
     padding: 0em 0em 1em 1em;
     margin-bottom: 0.2em;
     font-weight: 300;
@@ -451,6 +482,15 @@ a {
     font-size: 0.9em;
 }
 
+.contact-caption:hover{
+    background: 
+        linear-gradient(
+            var(--color-prin),
+            var(--color-prin-light),
+            var(--color-prin)
+            );
+}
+
 .stay-social{
     padding: 2em 0em 0em 0em;
     text-align: center;
@@ -459,4 +499,23 @@ a {
 .stay-center{
     text-align: center;
     margin-top: 0em;
+}
+
+.justlink {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    padding: 0.4em 1em;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.justlink:hover{
+    color: var(--color-prin-darker);
+    text-decoration: auto;
+    font-weight: 200;
 }
