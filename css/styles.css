@@ -48,6 +48,7 @@
     --color-prin-light: hsla(273, 30%, 64%, 1);
     --color-prin-dark: hsla(273, 30%, 34%, 1);
     --color-prin-darker: hsla(273, 30%, 44%, 1);
+    --color-prin-x-darker: hsla(273, 30%, 24%, 1);
 
    /* Color-comp1(#faa448) */
     --color-comp1-lighter: hsla(31, 95%, 83%, 1);
@@ -188,18 +189,20 @@ body {
     font-size: 1em;
     padding: 0.5rem 1rem 0.5rem 1rem;
     line-height: 1em;
-    margin-bottom: -1em;
+    margin-bottom: -2em;
 }
 
 .h4 {
     font-size: 0.8em;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    line-height: 0.8em;
+    padding: 0.5rem 0.5em 0.5em 0.5em;
+    line-height: 0.2em;
+    margin-top: -2em;
 }
 
 .h5 {
     font-size: 0.4em;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5em 0.5em 0.5em;
+    margin-bottom: -22em;
 }
 
 /* Default class */
@@ -243,10 +246,6 @@ body {
 
 [class*="col-"] {
     float: left;
-}
-
-.row {
-    
 }
 
 .cell {  
@@ -362,10 +361,10 @@ a {
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
-    background-color: var(--color-prin-darker);
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6));
+    background-color: var(--color-base-darker);
+    background: 
+        radial-gradient(circle,
+                        var(--color-base-darker) 0%,var(--color-prin-x-darker) 100%);
     opacity: 0.8;
     padding: 0.2em 0.2em 0.2em 0.2em;
     line-height: 1.55em;
@@ -382,10 +381,13 @@ a {
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
-    background-color: var(--color-prin-darker);
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6));
+    background-color: var(--color-prin-dark);
+    background: 
+        linear-gradient(
+            var(--color-prin),
+            var(--color-prin-light),
+            var(--color-prin)
+            );
     opacity: 0.8;
     padding: 0.2em 0.2em 0.2em 0.2em;
     display: inline;
@@ -393,6 +395,7 @@ a {
 }
 
 .logos-captxt{
+    font-family: var(--font-text);
     color: var(--color-gray-0);
     padding: 0em 0em 1em 1em;
     margin-bottom: 0.2em;
@@ -406,9 +409,14 @@ a {
 }
 
 .contact-caption{
-    background-color: var(--color-base-dark);
+    background: 
+        linear-gradient(
+            var(--color-prin-dark),
+            var(--color-prin),
+            var(--color-prin-dark)
+            );
     opacity: 2;
-    padding: 0.2em 0.2em 0.2em 0.2em;
+    padding: 1em 1em 1em 1em;
     width: 100%;
     line-break: normal;
 }
