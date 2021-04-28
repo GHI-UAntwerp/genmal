@@ -291,10 +291,6 @@ body {
 .logo-container {
     background-color: var(--color-light-bg);
     width: 100%;
-    -webkit-transition: background-color 2s;
-    -moz-transition: background-color 2s;
-    -o-transition: background-color 2s;
-    transition: background-color 2s;
 }
 
 .links-container {
