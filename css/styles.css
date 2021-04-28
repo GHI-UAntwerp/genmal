@@ -448,6 +448,7 @@ a {
     width: 100%;
     line-break: normal;
     text-align: center;
+    font-size: 0.9em;
 }
 
 .stay-social{
@@ -457,6 +458,5 @@ a {
 
 .stay-center{
     text-align: center;
-    font-style: italic;
     margin-top: 0em;
 }
