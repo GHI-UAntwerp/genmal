@@ -161,7 +161,7 @@ html {
 
 body {
 	background-color: var(--color-light-bg);
-	min-height: 100vh;
+	min-height: auto;
 	min-width: 95vw;
 	max-width: 720px;
 	margin: repeat(4, 0rem);
@@ -301,7 +301,7 @@ footer {
 }
 
 .logo-container {
-	background-color: var(--color-light-bg);
+	background-color: white;
 	display: flex;
 	justify-content: space-around;
 }
@@ -346,6 +346,7 @@ footer {
 	width: 100%;
 	align-items: center;
 	position: relative;
+	text-align: justify;
 }
 
 .pic-container {
@@ -353,6 +354,7 @@ footer {
 	flex-wrap: wrap;
 	padding: 0.5rem 1rem;
 	position: relative;
+	background-color: white;
 }
 
 .colblock {
