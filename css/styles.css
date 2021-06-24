@@ -1,33 +1,33 @@
 /* =================================================================== 
  * GENMAL Main Stylesheet
- * 16-04-2021
+ * 20-06-2021
  * Carlos A. Fernández Miñope @cienciayesquina
  * ------------------------------------------------------------------
 
-/* || Fonts */
+/* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
 
 :root {
-    --font-head: 'Montserrat', sans-serif;
-    --font-text: 'Open Sans', sans-serif;
-    /* monospace */
-    --font-mono: 'Roboto Mono', monospace;
+	--font-head: "Montserrat", sans-serif;
+	--font-text: "Open Sans", sans-serif;
+	/* monospace */
+	--font-mono: "Roboto Mono", monospace;
 }
 
 /* || Font size and line height */
 
 :root {
-    line-height: 1.6; /* Recomended */
-    font-size: 18px;
+	line-height: 1.6; /* Recomended */
+	font-size: 18px;
 }
 
-/* || Colors*/
+/* Colors*/
 
 :root {
-    /* All are custom colors, generated from logo theme
+	/* All are custom colors, generated from logo theme
      * color-principal(#8e68ad)
      * color-comp1(#faa448)
      * color-comp2(#f9f06c)
@@ -35,487 +35,432 @@
      - color-base (#414042)
      */
 
-    --color-prin: hsla(273, 30%, 54%, 1);
-    --color-comp1: hsla(31, 95%, 63%, 1);
-    --color-comp2: hsla(56, 92%, 70%, 1);
-    --color-accent: hsla(359, 84%, 78%, 1);
-    --color-base: hsla(270, 2%, 55%, 1);
+	--color-prin: hsla(273, 30%, 54%, 1);
+	--color-comp1: hsla(31, 95%, 63%, 1);
+	--color-comp2: hsla(56, 92%, 70%, 1);
+	--color-accent: hsla(359, 84%, 78%, 1);
+	--color-base: hsla(270, 2%, 55%, 1);
 
-    /* Theme color variations */
+	/* || Theme color variations */
 
-    /* Color-principal(#8e68ad) */
-    --color-prin-lighter: hsla(273, 30%, 74%, 1);
-    --color-prin-light: hsla(273, 30%, 64%, 1);
-    --color-prin-dark: hsla(273, 30%, 34%, 1);
-    --color-prin-darker: hsla(273, 30%, 44%, 1);
-    --color-prin-x-darker: hsla(273, 30%, 24%, 1);
+	/* Color-principal(#8e68ad) */
+	--color-prin-lighter: hsla(273, 30%, 74%, 1);
+	--color-prin-light: hsla(273, 30%, 64%, 1);
+	--color-prin-dark: hsla(273, 30%, 34%, 1);
+	--color-prin-darker: hsla(273, 30%, 44%, 1);
+	--color-prin-x-darker: hsla(273, 30%, 24%, 1);
 
-   /* Color-comp1(#faa448) */
-    --color-comp1-lighter: hsla(31, 95%, 83%, 1);
-    --color-comp1-light: hsla(31, 95%, 73%, 1);
-    --color-comp1-dark: hsla(31, 95%, 53%, 1);
-    --color-comp1-darker: hsla(31, 95%, 43%, 1);
+	/* Color-comp1(#faa448) */
+	--color-comp1-lighter: hsla(31, 95%, 83%, 1);
+	--color-comp1-light: hsla(31, 95%, 73%, 1);
+	--color-comp1-dark: hsla(31, 95%, 53%, 1);
+	--color-comp1-darker: hsla(31, 95%, 43%, 1);
 
-    /* Color-comp2(#f9f06c) */
-    --color-comp2-lighter: hsla(56, 92%, 90%, 1);
-    --color-comp2-light: hsla(56, 92%, 80%, 1);
-    --color-comp2-dark: hsla(56, 92%, 60%, 1);
-    --color-comp2-darker: hsla(56, 92%, 50%, 1);
+	/* Color-comp2(#f9f06c) */
+	--color-comp2-lighter: hsla(56, 92%, 90%, 1);
+	--color-comp2-light: hsla(56, 92%, 80%, 1);
+	--color-comp2-dark: hsla(56, 92%, 60%, 1);
+	--color-comp2-darker: hsla(56, 92%, 50%, 1);
 
-   /* Color-accent(#f69799) */
-    --color-acc-lighter: hsla(359, 84%, 99%, 1);
-    --color-acc-light: hsla(359, 84%, 88%, 1);
-    --color-acc-dark: hsla(359, 84%, 68%, 1);
-    --color-acc-darker: hsla(359, 84%, 58%, 1);
+	/* Color-accent(#f69799) */
+	--color-acc-lighter: hsla(359, 84%, 99%, 1);
+	--color-acc-light: hsla(359, 84%, 88%, 1);
+	--color-acc-dark: hsla(359, 84%, 68%, 1);
+	--color-acc-darker: hsla(359, 84%, 58%, 1);
 
-   /* Color-base(#414042) */
-    --color-base-lighter: hsla(270, 2%, 45%, 1);
-    --color-base-light: hsla(270, 2%, 35%, 1);
-    --color-base-dark: hsla(270, 2%, 15%, 1);
-    --color-base-darker: hsla(270, 2%, 05%, 1);
-    --color-base-x-darker: hsla(270, 2%, 0%, 1);
+	/* Color-base(#414042) */
+	--color-base-lighter: hsla(270, 2%, 45%, 1);
+	--color-base-light: hsla(270, 2%, 35%, 1);
+	--color-base-dark: hsla(270, 2%, 15%, 1);
+	--color-base-darker: hsla(270, 2%, 05%, 1);
+	--color-base-x-darker: hsla(270, 2%, 0%, 1);
 
-    /* shades 
-     * generated using 
-     * Tint & Shade Generator 
-     * (https://maketintsandshades.com/)
-     */
-    --color-gray-20: #000000;
-    --color-gray-19: #0a0a0a;
-    --color-gray-18: #141414;
-    --color-gray-17: #1e1e1e;
-    --color-gray-16: #282828;
-    --color-gray-15: #323333;
-    --color-gray-14: #3b3d3d;
-    --color-gray-13: #454747;
-    --color-gray-12: #4f5151;
-    --color-gray-11: #595b5b;
-    --color-gray-10: #636565;
-    --color-gray-9 : #737474;
-    --color-gray-8 : #828484;
-    --color-gray-7 : #929393;
-    --color-gray-6 : #a1a3a3;
-    --color-gray-5 : #b1b2b2;
-    --color-gray-4 : #c1c1c1;
-    --color-gray-3 : #d0d1d1;
-    --color-gray-2 : #e0e0e0;
-    --color-gray-1 : #eff0f0;
-    --color-gray-0 : #ffffff;
+	/* shades 
+        * generated using 
+        * Tint & Shade Generator 
+        * (https://maketintsandshades.com/)
+        */
+	--color-gray-20: #000000;
+	--color-gray-19: #0a0a0a;
+	--color-gray-18: #141414;
+	--color-gray-17: #1e1e1e;
+	--color-gray-16: #282828;
+	--color-gray-15: #323333;
+	--color-gray-14: #3b3d3d;
+	--color-gray-13: #454747;
+	--color-gray-12: #4f5151;
+	--color-gray-11: #595b5b;
+	--color-gray-10: #636565;
+	--color-gray-9: #737474;
+	--color-gray-8: #828484;
+	--color-gray-7: #929393;
+	--color-gray-6: #a1a3a3;
+	--color-gray-5: #b1b2b2;
+	--color-gray-4: #c1c1c1;
+	--color-gray-3: #d0d1d1;
+	--color-gray-2: #e0e0e0;
+	--color-gray-1: #eff0f0;
+	--color-gray-0: #ffffff;
 
-    /* others
-     */
-    --color-light-bg: white;
-    --color-dark-bg : hsla(270, 2%, 25%, 1);
-    --color-border  : var(--color-gray-2);
+	/* others
+        */
+	--color-light-bg: white;
+	--color-dark-bg: hsla(270, 2%, 25%, 1);
+	--color-border: var(--color-gray-2);
 }
 
 /* Color classes */
-.prin{
-    color: var(--color-prin)
+.prin {
+	color: var(--color-prin);
 }
 
-.comp1{
-    color: var(--color-comp1)
+.comp1 {
+	color: var(--color-comp1);
 }
 
-.comp2{
-    color: var(--color-comp2)
+.comp2 {
+	color: var(--color-comp2);
 }
 
-.accent{
-    color: var(--color-accent)
+.accent {
+	color: var(--color-accent);
 }
 
-.base-tx{
-    color: var(--color-base);
+.base-tx {
+	color: var(--color-base);
 }
 
-.white-tx{
-    color: var(--color-gray-0);
+.white-tx {
+	color: var(--color-gray-0);
 }
+
+/* Shadows */
 
 /* Text shadow class */
 .shadow-tx-dark {
-    text-shadow: 0.063em 0.063em 0.126em var(--color-base-darker) 
+	text-shadow: 0.063em 0.063em 0.126em var(--color-base-darker);
 }
 
 .shadow-tx-white {
-    text-shadow: 0.063em 0.063em 0.126em var(--color-white) 
+	text-shadow: 0.063em 0.063em 0.126em var(--color-white);
 }
 
 /* Box shadow class */
 .shadow-bx-dark {
-    box-shadow: 0 4px 8px 0 var(--color-base-dark);
+	box-shadow: 0 4px 8px 0 var(--color-base-dark);
 }
 
-
-/* || Set limits and background */
+/* Background & limits */
 
 html {
-    background-color: var(--color-prin);
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0rem 0rem 0rem 0rem;
-    display: grid;
-    justify-content: center;
-    white-space: normal;
-} 
-
-body {
-    min-height: 100vh;
-    padding: 1rem 1rem 1rem 1rem;
+	background-color: var(--color-prin);
+	margin: repeat(4, 0rem);
+	padding: repeat(4, 0rem);
+	justify-content: center;
 }
 
-/* || General styles */
+body {
+	background-color: var(--color-light-bg);
+	min-height: 100vh;
+	min-width: 95vw;
+	max-width: 720px;
+	margin: repeat(4, 0rem);
+	padding: repeat(4, 0rem);
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-rows: 0.2fr auto auto auto auto auto auto auto;
+	grid-template-columns: 1;
+	grid-template-areas:
+		"navbar"
+		"main"
+		"about"
+		"about-2"
+		"members"
+		"logos"
+		"news"
+		"footer";
+}
+
+/* General styles */
 
 /* Headline classes */
-.headline {    
-    font-family: var(--font-head);
+.headline {
+	font-family: var(--font-head);
+	margin-bottom: -3rem;
 }
 
 .h1 {
-    font-size: 2em;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    line-height: 2em;
-    margin-bottom: -1em;
+	font-size: 1.2em;
+	padding: 1em;
+	line-height: 2em;
 }
 
 .h2 {
-    font-size: 1.5em;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    line-height: 1.8em;
-    margin-bottom: -2em;
+	font-size: 1.5em;
+	padding: 1em;
+	line-height: 1.8em;
 }
 
 .h3 {
-    font-size: 1em;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    line-height: 1em;
-    margin-bottom: -2em;
+	font-size: 1.3em;
+	padding: 1em;
+	line-height: 1em;
 }
 
 .h4 {
-    font-size: 0.8em;
-    padding: 0.5rem 0.5em 0.5em 0.5em;
-    line-height: 0.2em;
-    margin-top: -2em;
+	font-size: 0.8em;
+	padding: 1em;
+	line-height: 1em;
 }
 
 .h5 {
-    font-size: 0.4em;
-    padding: 0.5rem 0.5em 0.5em 0.5em;
-    margin-bottom: -22em;
+	font-size: 0.4em;
+	padding: 1em;
 }
 
 /* Default class */
 .default {
-    font-family: var(--font-text);
-    font-size: 1em;
-    text-align: justify;
-    padding: 1em 1em 1em 1em;
-    }
+	font-family: var(--font-text);
+	margin-bottom: -1rem;
+	font-size: 1em;
+	padding: 1em;
+}
 
 /* Secondary class */
 .secondary {
-    font-family: var(--font-text);
-    font-size: 0.78em;
-    text-align: justify;
-    padding: 1em 1em 1em 1em;
-    }
+	font-family: var(--font-text);
+	margin-bottom: -0.6rem;
+	font-size: 0.78em;
+}
 
 /* Accesory class */
 .accesory {
-    font-family: var(--font-text);
-    font-size: 0.67em;
-    text-transform: uppercase;
-    padding: 1em 1em 1em 1em;
-    }
-
-/* || Responsive layout*/
-
-/* A general reset */
-* {
-  box-sizing: border-box;
+	font-family: var(--font-text);
+	font-size: 0.67em;
+	text-transform: uppercase;
 }
 
-/* Repollo */
-.col-1 {width: 16.66%;}
-.col-2 {width: 33.32;}
-.col-3 {width: 49.98%;}
-.col-4 {width: 66.64%;}
-.col-5 {width: 83.3%;}
-.col-6 {width: 100%;}
-
-[class*="col-"] {
-    float: left;
+/* Define sections */
+.navbar {
+	grid-area: navbar;
+	display: flex;
+	background: var(--color-gray-6);
+	flex-direction: column;
 }
 
-.cell {  
-    background-color: var(--color-light-bg);
-    max-width: 100%;
+.main {
+	grid-area: main;
+	display: flex;
+	background: white;
+	flex-wrap: wrap;
 }
 
-.row::after {
-  content: " ";
-  clear: both;
-  display: table;
+.about {
+	grid-area: about;
+	display: flex;
+	background: white;
+	flex-wrap: wrap;
 }
 
-/*|| The media queries*/
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+.about-2 {
+	grid-area: about-2;
+	display: flex;
+	background: white;
+	flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-    .col-s-1 {width: 16.66%;}
-    .col-s-2 {width: 33.32;}
-    .col-s-3 {width: 49.98%;}
-    .col-s-4 {width: 66.64%;}
-    .col-s-5 {width: 83.3%;}
-    .col-s-6 {width: 100%;}
+.members {
+	grid-area: members;
+	display: flex;
+	background: white;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-    .col-1 {width: 16.66%;}
-    .col-2 {width: 33.32;}
-    .col-3 {width: 49.98%;}
-    .col-4 {width: 66.64%;}
-    .col-5 {width: 83.3%;}
-    .col-6 {width: 100%;}
+.logos {
+	grid-area: logos;
+	display: flex;
+	background: white;
+	flex-wrap: nowrap;
 }
 
-/* || Header and Main Navigation */
+.news {
+	grid-area: news;
+	display: block;
+	background: white;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	padding: 2em 0em 0em 0em;
+	text-align: center;
+}
+
+footer {
+	grid-area: footer;
+	display: flex;
+	flex-wrap: wrap;
+}
 
 .logo-container {
-    background-color: var(--color-light-bg);
-    width: 100%;
+	background-color: var(--color-light-bg);
+	display: flex;
+	justify-content: space-around;
 }
 
 .links-container {
-    list-style-type: none;
-    background-color: var(--color-light-bg);
-    overflow: inline-block;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
-ul{
-    list-style-type: none;
-    width: 100%;
-    display: flex;
+.links-container ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-ul:hover{
-    background-color: var(--color-prin);
+.links-container ul li {
+	list-style-type: none;
 }
 
-li{
-    list-style-type: none;
-    width: 100%;
-    white-space: nowrap;
+.links-container ul li a {
+	background-color: var(--color-light-bg);
+	color: var(--color-base);
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	list-style: none;
+	padding: 0.1em 1em;
 }
 
-a {
-    color: var(--color-base);
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    padding: 0.4em 1em;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0
+.links-container ul li a:hover {
+	background-color: var(--color-prin);
+	color: white;
+	text-decoration: auto;
+	font-weight: 1000;
 }
 
-a:hover{
-    background-color: white;
-    color: var(--color-prin-darker);
-    text-decoration: auto;
-    font-weight: 200;
+.text-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	position: relative;
 }
 
-
-/* Dark background for white text */
-.txt-drk-bg {
-    background-color: var(--color-gray-17);
-    opacity: 0.6;
-}
-
-/* Fade-in animation */
-.fade-in {
-  animation: fadeIn 2s;
-  -webkit-animation: fadeIn 2s;
-  -moz-animation: fadeIn 2s;
-  -o-animation: fadeIn 2s;
-  -ms-animation: fadeIn 2s;
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-/* || General */
-.box 
-.des
-.pic {
-    background-color: var(--color-light-bg);
-}
-
-/* An container for pictures */
 .pic-container {
-    position: relative;
-    bottom: 0rem;
-    left: 0rem;
-    right: 0rem;
-    color: var(--color-gray-0);
-    width: 100%;
-    max-width: 1280px;
-    display: inline;
-    transition: 2s;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem 1rem;
+	position: relative;
 }
 
-/* An image caption */
-.caption{
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: var(--color-base-darker);
-    background: 
-        radial-gradient(circle,
-                        var(--color-base-darker) 0%,var(--color-prin-x-darker) 100%);
-    opacity: 0.8;
-    padding: 0.2em 0.2em 0.2em 0.2em;
-    line-height: 1.55em;
-    display: inline;
+.colblock {
+	flex-direction: column;
+	width: 100%;
 }
 
-.caption:hover{
-    background-color: var(--color-base-x-darker);
-    background: 
-        radial-gradient(circle,
-                        var(--color-prin-x-darker) 0%,var(--color-prin-x-darker) 100%);
+.rowblock {
+	flex-direction: row;
+	width: 100%;
 }
 
-.captxt{
-    color: white;
-    padding: 0em 01em 0em 1em;
+figcaption {
+	font-family: var(--font-text);
+	font-size: 0.8em;
+	text-align: justify;
+	color: white;
+	position: absolute;
+	bottom: 0.5rem;
+	right: 1rem;
+	left: 1rem;
+	background: radial-gradient(
+		circle,
+		var(--color-base-darker) 0%,
+		var(--color-prin-x-darker) 100%
+	);
+	opacity: 0;
+	padding: 0.2rem 0.4rem;
 }
 
-.logos-caption{
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: var(--color-prin-dark);
-    background: 
-        linear-gradient(
-            var(--color-prin),
-            var(--color-prin-light),
-            var(--color-prin)
-            );
-    opacity: 0.8;
-    padding: 0.2em 0.2em 0.2em 0.2em;
-    display: inline;
-    line-height: 0.5em;
-    text-align: center;
+figcaption:hover {
+	opacity: 0.8;
 }
 
-.logos-caption:hover{
-    background: 
-        linear-gradient(
-            var(--color-prin-darker),
-            var(--color-prin),
-            var(--color-prin-darker)
-            );
+.logoscaption {
+	font-family: var(--font-text);
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+	margin-top: 0rem;
+	color: white;
+	position: absolute;
+	bottom: 0rem;
+	right: 1rem;
+	left: 1rem;
+	background: radial-gradient(
+		circle,
+		var(--color-prin) 25%,
+		var(--color-prin-darker) 100%
+	);
+	opacity: 1;
+	padding: 0.2rem 0.4rem;
 }
 
-.logos-captxt{
-    font-family: var(--font-text);
-    color: white;
-    padding: 0em 0em 1em 1em;
-    margin-bottom: 0.2em;
-    font-weight: 300;
-    text-align: center;
+.logolink {
+	font-size: 3em;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	text-decoration: none;
 }
 
-.stay-connected{
-    font-family: var(--font-text);
-    font-size: 4em;
-    display: flex;
+.icons {
+	font-size: 3em;
+	padding: 0.2em;
+	margin-top: 0rem;
+	margin-bottom: -0rem;
 }
 
-.contact-caption{
-    background: 
-        linear-gradient(
-            var(--color-prin-dark),
-            var(--color-prin),
-            var(--color-prin-dark)
-            );
-    opacity: 2;
-    padding: 1em 1em 1em 1em;
-    width: 100%;
-    line-break: normal;
-    text-align: center;
-    font-size: 0.9em;
+.stay-social {
+	text-align: center;
 }
 
-.contact-caption:hover{
-    background: 
-        linear-gradient(
-            var(--color-prin),
-            var(--color-prin-light),
-            var(--color-prin)
-            );
+.block {
+	display: block;
+	align-content: center;
 }
 
-.stay-social{
-    padding: 2em 0em 0em 0em;
-    text-align: center;
+.socialblock {
+	display: flex;
+	float: left;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 1fr;
 }
 
-.stay-center{
-    text-align: center;
-    margin-top: 0em;
+.contact-CDR {
+	font-family: var(--font-text);
+	color: white;
+	margin-bottom: -1rem;
+	font-size: 0.8em;
+	padding: 1em;
+	align-content: center;
+	text-align: center;
+	text-decoration: none;
+	background: var(--color-prin);
+	width: 100%;
 }
 
 .justlink {
-    color: white;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    padding: 0.4em 1em;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0
+	color: white;
+	text-decoration: none;
+	padding: 0.4em 0.2em;
+	position: relative;
 }
 
-.justlink:hover{
-    color: var(--color-prin-darker);
-    text-decoration: auto;
-    font-weight: 200;
+.justlink:hover {
+	color: var(--color-prin-dark);
+	text-decoration: auto;
+	font-weight: 300;
 }
